@@ -1,0 +1,8 @@
+#backScrean{
+    @include hundred();
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    box-sizing: border-box;
+    background: linear-gradient(#9ccccc, #14dcc4);
+}

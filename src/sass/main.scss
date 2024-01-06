@@ -1,0 +1,8 @@
+@import "mixin", "backScrean";
+
+body{
+    @include hundred ();
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
