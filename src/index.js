@@ -1,3 +1,6 @@
+import trees from './images/trees.jpg'
+import gene from './images/gene.svg'
+
 const heading = document.createElement('h1')
 heading.textContent = 'Как интересно!'
 
