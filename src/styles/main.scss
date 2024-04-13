@@ -20,3 +20,25 @@ body {
     top: 0;
     z-index: -100;
 }
+
+#all {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+}
+
+#page {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+nav, aside {
+    flex-grow: 1;
+    min-width: 100px;
+    max-width: 300px;
+}
+
+main {
+    flex-grow: 4;
+}
