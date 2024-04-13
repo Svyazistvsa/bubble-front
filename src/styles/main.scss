@@ -76,8 +76,7 @@ header{
 header > h3 {
     position: relative;
     width: 307px;
-    padding: 5px;
-    margin: 5px auto 5px;
+    margin: -5px auto 5px;
     background-color: $yellow;
     border: 1px solid $darkOrange;
     border-radius: 15px;
@@ -87,10 +86,10 @@ header > h3, #subMenu {
     background-color: $yellow;
     border: 1px solid $darkOrange;
     border-radius: 15px;
-    padding: 5px;
+    padding: 10px;
 }
 
 .logo > h1, header > h3, #subMenu {
     color: $darkGreen;
-    text-shadow: $darkOrange 1.5px 0px, $darkOrange 0px 1.5px, $darkOrange 0px -1.5px, $darkOrange -1.5px 0px;
+    text-shadow: $darkOrange 1px 0px, $darkOrange 0px 1px, $darkOrange 0px -1px, $darkOrange -1px 0px;
 }
