@@ -48,8 +48,8 @@ main {
 header{
     height: 180px;
     min-width: 750px;        
-    margin: 5px auto 0;
-    background: linear-gradient(0deg, $darkOrange 1%, $orange );;
+    margin: 5px auto 5px;
+    background: linear-gradient(0deg, $darkOrange 1%, $orange );
     border: solid 2px $orange;
     border-radius: 10px;
 }
@@ -82,14 +82,37 @@ header > h3 {
     border-radius: 15px;
 }
 
-header > h3, #subMenu {
+header > h3, #subMenu, .mainMenu > li, #mainMenu {
     background-color: $yellow;
     border: 1px solid $darkOrange;
     border-radius: 15px;
     padding: 10px;
 }
 
-.logo > h1, header > h3, #subMenu {
+.logo > h1, header > h3 {
     color: $darkGreen;
     text-shadow: $darkOrange 1px 0px, $darkOrange 0px 1px, $darkOrange 0px -1px, $darkOrange -1px 0px;
+}
+
+#mainMenu {
+    position: relative;
+    left: 40px;
+}
+
+.mainMenu > li {    
+    list-style-type: none;
+    min-width: 100px;
+    max-width: 200px;
+}
+
+main { 
+    background-color: white;
+    filter: blur(3px);
+    opacity: 0.8;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(0deg, $darkOrange 1%, $orange );
 }
