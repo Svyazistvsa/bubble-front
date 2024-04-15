@@ -1,16 +1,19 @@
 let screen = document.querySelector('#screen'),
-    ww,wh;
+    ww = window.innerWidth,
+    wh = window.innerHeight; 
 
 window.addEventListener("resize", winWidth);
 
-function winWidth(){
+function winWidth(ww, wh){
     ww = window.innerWidth;
     wh = window.innerHeight;
 }
 
+
 function generator(ww, wh){
+    
     let div = document.createElement('div'),
-        bottomPoint = getRandomInt(50, (ww - 50)),
+        bottomPoint = getRandomInt(50, ww-50),
         diametr = getRandomInt(10, 300);
     div.classList.add('backB');
     div.style.cssText += `
