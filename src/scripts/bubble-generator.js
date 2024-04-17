@@ -1,20 +1,17 @@
 let screen = document.querySelector('#screen'),
-    ww = window.innerWidth,
-    wh = window.innerHeight; 
+    ww = window.innerWidth ,
+    wh ; 
 
-screen.style.width = window.innerWidth;
+window.addEventListener("resize", () => winWidth());
 
-window.addEventListener("resize", () => winWidth(ww,wh));
-
-function winWidth(ww, wh){
+function winWidth(){    
     ww = window.innerWidth;
     wh = window.innerHeight;
     screen.style.cssText = `width: ${ww}px`;
-   
+    
 }
 
-function generator(ww, wh ){    
-    
+function generator(){    
     let div = document.createElement('div'),
         bottomPoint = getRandomInt(150, ww-250),
         diametr = getRandomInt(10, 300);
@@ -33,6 +30,13 @@ function getRandomInt(min, max) {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
+
+  function destroy(){
+    let arr = document.querySelectorAll(".backB");
+    for(let i=0; i<arr.length; i++){
+        arr[i].remove();
+    }
+  }  
   
-  
-  let timerId = setInterval(generator, 500, ww, wh);
+  let timerId = setInterval(generator, 500);
+  let timerIdd = setInterval(destroy, 10000);
