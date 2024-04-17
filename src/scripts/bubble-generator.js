@@ -1,12 +1,10 @@
 let screen = document.querySelector('#screen'),
-    ww = window.innerWidth ,
-    wh ; 
+    ww = window.innerWidth; 
 
 window.addEventListener("resize", () => winWidth());
 
 function winWidth(){    
     ww = window.innerWidth;
-    wh = window.innerHeight;
     screen.style.cssText = `width: ${ww}px`;
     
 }
