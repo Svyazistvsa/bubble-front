@@ -42,7 +42,7 @@ module.exports = {
                 type: 'asset/resource',
             },
             {
-                test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+                test: /\.(woff(2)?|eot|ttf|otf|svg)$/,
                 type: 'asset/inline',
             },
             {
