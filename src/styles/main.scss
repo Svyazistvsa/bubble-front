@@ -130,7 +130,7 @@ footer {
     background: linear-gradient(0deg, $darkOrange 1%, $orange );
 }
 
-.myGit > a, .footLogo > a {
+.myGit > a {
     display: block;
     margin: 10% auto auto 10%;
     width: 100%;
@@ -150,5 +150,8 @@ footer {
     header > h3{
         font-size: 12pt;
         width:350px;
+    }
+    .myGit > a {
+        font-size: 18pt;
     }   
 }
