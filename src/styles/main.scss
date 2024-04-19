@@ -78,7 +78,7 @@ header{
 
 header > h3 {
     position: relative;
-    width: 307px;
+    width: 307px;    
     margin: -5px auto 5px;
     background-color: $yellow;
     border: 1px solid $darkOrange;
@@ -144,4 +144,11 @@ footer {
 
 .date {
     font-size: 13pt;
+}
+
+@-moz-document url-prefix() {
+    header > h3{
+        font-size: 12pt;
+        width:350px;
+    }   
 }
