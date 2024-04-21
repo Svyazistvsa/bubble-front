@@ -48,18 +48,20 @@ main {
     flex-grow: 4;
 }
 
-header{
+header {
     height: 180px;
     min-width: 750px;        
     margin: 5px auto 5px;
-    background: linear-gradient(0deg, $darkOrange 1%, $orange );
-    transition: background 1s linear ;
+    background-color: $darkOrange;
+    //background: linear-gradient(0deg, $darkOrange 1%, $orange );
+    transition:  1s linear ;
     border: solid 2px $orange;
     border-radius: 10px;
 }
-
+/*Разобрать с keyframe анимацией для градиентов*/
 header:hover {
-    background: liner-gradient(0deg, $darkOrange 5%, $orange );
+    //background: liner-gradient(0deg, $darkOrange 10%, $orange );
+    background-color: $orange;
 }
 
 .logo {
