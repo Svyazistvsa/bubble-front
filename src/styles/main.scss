@@ -53,8 +53,13 @@ header{
     min-width: 750px;        
     margin: 5px auto 5px;
     background: linear-gradient(0deg, $darkOrange 1%, $orange );
+    transition: background 1s linear ;
     border: solid 2px $orange;
     border-radius: 10px;
+}
+
+header:hover {
+    background: liner-gradient(0deg, $darkOrange 5%, $orange );
 }
 
 .logo {
