@@ -49,25 +49,24 @@ main {
 }
 
 header {
+    transition: all 1s;
     height: 180px;
     min-width: 750px;        
     margin: 5px auto 5px;
-    background: linear-gradient(0deg,$orange 0%, $darkOrange 50%, $orange 100%);
+    
     border: solid 2px $orange;
     border-radius: 10px;
-    background-size: 4000px;
-    animation: back 2s infinite alternate;    
+    
+    
 }
-/*Разобрать с keyframe анимацией для градиентов*/
-//header:hover {
-//    background-position: 0 200%;
-//}
+.head {
+    background: linear-gradient(0deg,$orange 0%, $darkOrange 50%, $orange 100%);
+    
+}
 
-@keyframes back {
-    100% {
-      background-position: 0 180px;
-    }
-  }
+.head:hover {
+    filter: hue-rotate(70deg);
+}
 
 .logo {
     position: relative;
