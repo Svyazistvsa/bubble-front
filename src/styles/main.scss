@@ -53,15 +53,15 @@ header {
     min-width: 750px;        
     margin: 5px auto 5px;
     background-color: $darkOrange;
-    //background: linear-gradient(0deg, $darkOrange 1%, $orange );
+    background: linear-gradient(0deg, $darkOrange 1%, $orange 99% );
     transition:  1s linear ;
     border: solid 2px $orange;
     border-radius: 10px;
+    animation: back 2s ease-in-out 300ms forwards;
 }
 /*Разобрать с keyframe анимацией для градиентов*/
 header:hover {
-    //background: liner-gradient(0deg, $darkOrange 10%, $orange );
-    background-color: $orange;
+    background: liner-gradient(0deg, $darkOrange 10%, $orange 90%);
 }
 
 .logo {
