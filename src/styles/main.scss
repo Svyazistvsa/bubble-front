@@ -52,17 +52,23 @@ header {
     height: 180px;
     min-width: 750px;        
     margin: 5px auto 5px;
-    background-color: $darkOrange;
-    background: linear-gradient(0deg, $darkOrange 1%, $orange 99% );
-    transition:  1s linear ;
+    background: linear-gradient(0deg, $darkOrange 0%, $orange 50%);
     border: solid 2px $orange;
     border-radius: 10px;
-    animation: back 2s ease-in-out 300ms forwards;
+    //background-position: 0 0;
+    animation: back 2s infinite alternate;
+    background-size: 4000px;
 }
 /*Разобрать с keyframe анимацией для градиентов*/
-header:hover {
-    background: liner-gradient(0deg, $darkOrange 10%, $orange 90%);
-}
+//header:hover {
+//    background-position: 0 200%;
+//}
+
+@keyframes back {
+    100% {
+      background-position: 0 180px;
+    }
+  }
 
 .logo {
     position: relative;
