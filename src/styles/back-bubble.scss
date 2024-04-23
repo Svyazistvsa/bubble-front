@@ -2,9 +2,6 @@ $dDarkGreen: #192e36;
 $green: #2a9d8f;
 $dGreen: rgba(148, 219, 211, 0.3);
 $darkGreen: #264653;
-$yellow: #e9c46a;
-$orange: #f4a261;
-$darkOrange: #e76f51;
 
 .backB {
     position: absolute;
@@ -13,4 +10,20 @@ $darkOrange: #e76f51;
     border:solid 1px $dDarkGreen;
     border-radius: 50%;
     box-shadow: inset 5px 5px 5px $dDarkGreen, inset -5px -5px 5px $green;
+    animation: appearance 10s ;
+}
+
+@keyframes appearance {
+    0%{
+        width: 30px;
+        height: 20px;
+    }
+    25%{
+        width: calc(100% - 30%);
+        height: calc(100% - 50%);
+    }
+    50%{
+        width: calc(width * 50%);
+        height: calc(height * 75%);
+    }
 }
