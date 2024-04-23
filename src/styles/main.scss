@@ -55,13 +55,11 @@ header {
     margin: 5px auto 5px;
     border: solid 2px $orange;
     border-radius: 10px;
-}
-.head {
     background: linear-gradient(0deg,$orange 0%, $darkOrange 50%, $orange 100%);
     background-size: 270px;
 }
 
-.head:hover {
+header:hover {
     background-position-y: 135px;
 }
 
