@@ -32,11 +32,16 @@ function getRandomInt(min, max) {
   }
 
   function destroy(){
-    let arr = document.querySelectorAll(".backB");
+    let arr = screen.querySelectorAll(".backB");
     for(let i=0; i<arr.length; i++){
-        arr[i].remove();
+        let client = arr[i].getBoundingClientRect();
+        
+        if(client.bottom < 0){
+            arr[i].remove();
+        }
     }
+    
   }  
   
-  let timerId = setInterval(generator, 1000);
-  let timerIdd = setInterval(destroy, 20000);
+let timerId = setInterval(generator, 1000);
+let timerIdd = setInterval(destroy, 10000);
