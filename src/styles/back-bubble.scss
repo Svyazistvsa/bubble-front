@@ -18,7 +18,7 @@ $darkGreen: #264653;
     border:solid 1px $dDarkGreen;
     border-radius: 50%;
     box-shadow: inset -5px -5px 5px $green,inset 5px 5px 5px $dDarkGreen;
-    animation: ascent 1.5s ease ,appearance 3s forwards;
+    animation: appearance 3s forwards,  ascent 1.5s forwards 3s;
 }
 
 @keyframes appearance {
