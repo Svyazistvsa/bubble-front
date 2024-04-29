@@ -17,15 +17,14 @@ $darkGreen: #264653;
     background-color: $dGreen;
     border:solid 1px $dDarkGreen;
     border-radius: 50%;
-    box-shadow: inset 5px 5px 5px $dDarkGreen, inset -5px -5px 5px $green;
-    animation: appearance 3s forwards;
+    box-shadow: inset -5px -5px 5px $green,inset 5px 5px 5px $dDarkGreen;
+    animation: ascent 1.5s ease ,appearance 3s forwards;
 }
 
 @keyframes appearance {
     0%{
         width: 0;
-        height: 0;
-        
+        height: 0;        
     }
     25%{
         
@@ -36,9 +35,21 @@ $darkGreen: #264653;
         left: calc(var(--castomL) - (var(--castomD) / 4));
     }
     75%{
+        
         left: calc(var(--castomL) - (var(--castomD) / 3));
     }
     100%{
+        
         left: calc(var(--castomL) - (var(--castomD) / 3));
     }
+}
+
+@keyframes ascent {
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom: 125%;
+    }
+
 }
