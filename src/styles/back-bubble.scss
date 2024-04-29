@@ -45,11 +45,32 @@ $darkGreen: #264653;
 }
 
 @keyframes ascent {
-    from{
+    0%{
         bottom: 0;
+        height: calc(var(--castomD) * 1.4);
+        width: calc(var(--castomD) / 1.4);
+        
     }
-    to{
-        bottom: 125%;
+    10%{
+        bottom: calc(var(--castomD) / 10);
+        height: calc(var(--castomD) / 1.2);
+        width: calc(var(--castomD) * 1.2);
+        left: calc(var(--castomL) - (var(--castomD) / 3));
+    }
+    20%{
+        bottom: calc(var(--castomD) / 8);
+        height: calc(var(--castomD) * 1.1);
+        width: calc(var(--castomD) / 1.1);
+        left: calc(var(--castomL) - (var(--castomD) / 3));
+    }
+    30%{
+        bottom: calc(var(--castomD) / 6);
+        height: var(--castomD);
+        width: var(--castomD);
+    }
+    
+    100%{
+        bottom: 125%; 
     }
 
 }
