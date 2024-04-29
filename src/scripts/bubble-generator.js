@@ -1,3 +1,5 @@
+"use strict"
+
 let screen = document.querySelector('#screen'),
     ww = window.innerWidth; 
 
@@ -11,14 +13,14 @@ function winWidth(){
 
 function generator(){    
     let div = document.createElement('div'),
-        bottomPoint = getRandomInt(150, ww-250),
+        bottomPoint = getRandomInt(150, ww-150),
         diametr = getRandomInt(10, 300);
     div.classList.add('backB');
     div.style.cssText += `
-        left: ${bottomPoint}px;
-        width: ${diametr}px;
-        height: ${diametr}px;
-    `;
+        --castomD: ${diametr}px;
+        --castomL: ${bottomPoint}px;
+        `
+    ;
     screen.append(div);
     
 }
@@ -36,5 +38,5 @@ function getRandomInt(min, max) {
     }
   }  
   
-  let timerId = setInterval(generator, 500);
-  let timerIdd = setInterval(destroy, 10000);
+  let timerId = setInterval(generator, 1000);
+  let timerIdd = setInterval(destroy, 20000);

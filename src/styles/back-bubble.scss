@@ -1,29 +1,44 @@
+:root {
+   --castomD: 0;
+   --castomL: 0;
+}
+
 $dDarkGreen: #192e36;
 $green: #2a9d8f;
 $dGreen: rgba(148, 219, 211, 0.3);
 $darkGreen: #264653;
 
 .backB {
+    width: var(--castomD);
+    height: var(--castomD);
+    left: var(--castomL);
     position: absolute;
     bottom: 0;
     background-color: $dGreen;
     border:solid 1px $dDarkGreen;
     border-radius: 50%;
     box-shadow: inset 5px 5px 5px $dDarkGreen, inset -5px -5px 5px $green;
-    animation: appearance 10s ;
+    animation: appearance 3s forwards;
 }
 
 @keyframes appearance {
     0%{
-        width: 30px;
-        height: 20px;
+        width: 0;
+        height: 0;
+        
     }
     25%{
-        width: calc(100% - 30%);
-        height: calc(100% - 50%);
+        
+        left: calc(var(--castomL) - (var(--castomD) / 8));
     }
     50%{
-        width: calc(width * 50%);
-        height: calc(height * 75%);
+        
+        left: calc(var(--castomL) - (var(--castomD) / 4));
+    }
+    75%{
+        left: calc(var(--castomL) - (var(--castomD) / 3));
+    }
+    100%{
+        left: calc(var(--castomL) - (var(--castomD) / 3));
     }
 }
