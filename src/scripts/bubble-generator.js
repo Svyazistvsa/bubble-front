@@ -39,9 +39,12 @@ function getRandomInt(min, max) {
         if(client.bottom < 0){
             arr[i].remove();
         }
+        if(client.right > ww){
+            arr[i].remove();
+        }
     }
     
   }  
   
-let timerId = setInterval(generator, 1000);
-let timerIdd = setInterval(destroy, 10000);
+let timerId = setInterval(generator, 500);
+let timerIdd = setInterval(destroy, 2000);
