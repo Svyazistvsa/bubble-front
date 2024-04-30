@@ -23,50 +23,52 @@ $darkGreen: #264653;
 
 @keyframes appearance {
     0%{
-        width: 0;
-        height: 0;        
+        transform: scaleX(0.01) scaleY(0.01);
     }
-    25%{
-        
-        left: calc(var(--castomL) - (var(--castomD) / 8));
-    }
-    50%{
-        
-        left: calc(var(--castomL) - (var(--castomD) / 4));
-    }
-    75%{
-        
-        left: calc(var(--castomL) - (var(--castomD) / 3));
-    }
+    // 25%{
+        // transform: scaleX(0.25) scaleY(0.25);
+        // 
+    // }
+    // 50%{
+        // transform: scaleX(0.5) scaleY(0.5);
+        // 
+    // }
+    // 75%{
+        // transform: scaleX(0.75) scaleY(0.75);
+        // 
+    // }
     100%{
+        transform: scaleX(1) scaleY(1);
         
-        left: calc(var(--castomL) - (var(--castomD) / 3));
     }
 }
 
 @keyframes ascent {
     0%{
         bottom: 0;
-        height: calc(var(--castomD) * 1.4);
-        width: calc(var(--castomD) / 1.4);
-        
+        // height: calc(var(--castomD) * 1.4);
+        // width: calc(var(--castomD) / 1.4);
+        transform: scaleX(0.8) scaleY(1.2);
     }
     10%{
         bottom: calc(var(--castomD) / 10);
-        height: calc(var(--castomD) / 1.2);
-        width: calc(var(--castomD) * 1.2);
-        left: calc(var(--castomL) - (var(--castomD) / 3));
+        // height: calc(var(--castomD) / 1.2);
+        // width: calc(var(--castomD) * 1.2);
+        // left: calc(var(--castomL) - (var(--castomD) / 3));
+        transform: scaleX(1.2) scaleY(0.8);
     }
     20%{
         bottom: calc(var(--castomD) / 8);
-        height: calc(var(--castomD) * 1.1);
-        width: calc(var(--castomD) / 1.1);
-        left: calc(var(--castomL) - (var(--castomD) / 3));
+        // height: calc(var(--castomD) * 1.1);
+        // width: calc(var(--castomD) / 1.1);
+        // left: calc(var(--castomL) - (var(--castomD) / 3));
+        transform: scaleX(0.9) scaleY(1.1);
     }
     30%{
         bottom: calc(var(--castomD) / 6);
-        height: calc(var(--castomD) * 1.03);
-        width: calc(var(--castomD) / 1.03);
+        // height: calc(var(--castomD) * 1.03);
+        // width: calc(var(--castomD) / 1.03);
+        transform: scaleX(0.95) scaleY(1.05);
     }    
     100%{
         bottom: 125%; 
