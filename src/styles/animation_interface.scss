@@ -3,16 +3,16 @@
 }
 
 @keyframes shake {
-    0%{
-        max-width: calc(100% * 1.2);
-        max-height: calc(100% / 1.2);
+    30%{
+        transform: scaleX(1.07) scaleY(1.05);
     }
-    50%{
-        max-width: calc(width / 1.2);
-        max-height: calc(height * 1.2);
+    60%{
+        transform: scaleX(1.05) scaleY(1.07);
+    }
+    70%{
+        transform: scaleX(1.04) scaleY(1.02);
     }
     100%{
-        max-width: calc(width * 1.2);
-        max-height: calc(height / 1.2);
+        transform: scaleX(1) scaleY(1);
     }
 }
