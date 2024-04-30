@@ -11,6 +11,11 @@ function winWidth(){
     
 }
 
+screen.addEventListener("animationend", (e) => {    
+        if(e.animationName == "ascent") e.target.remove()
+    }
+)
+
 function generator(){    
     let div = document.createElement('div'),
         bottomPoint = getRandomInt(150, ww-150),
@@ -23,8 +28,7 @@ function generator(){
         --castomL: ${bottomPoint}px;
         `
     ;
-    screen.append(div);
-    
+    screen.append(div);    
 }
 
 function getRandomInt(min, max) {
@@ -38,9 +42,9 @@ function getRandomInt(min, max) {
     for(let i=0; i<arr.length; i++){
         let client = arr[i].getBoundingClientRect();
         
-        if(client.bottom < 0){
-            arr[i].remove();
-        }
+        // if(client.bottom < 0){
+            //  arr[i].remove();
+        // }
         if(client.right > ww){
             arr[i].remove();
         }
