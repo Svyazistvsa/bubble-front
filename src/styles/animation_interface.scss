@@ -1,0 +1,18 @@
+.logo:hover, #mainMenu:hover, #subMenu:hover, .mainMenu>li:hover {
+    animation: shake 1s ease;
+}
+
+@keyframes shake {
+    0%{
+        max-width: calc(100% * 1.2);
+        max-height: calc(100% / 1.2);
+    }
+    50%{
+        max-width: calc(width / 1.2);
+        max-height: calc(height * 1.2);
+    }
+    100%{
+        max-width: calc(width * 1.2);
+        max-height: calc(height / 1.2);
+    }
+}
