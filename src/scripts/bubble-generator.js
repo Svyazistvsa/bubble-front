@@ -14,7 +14,7 @@ function winWidth(){
 function generator(){    
     let div = document.createElement('div'),
         bottomPoint = getRandomInt(150, ww-150),
-        diametr = getRandomInt(10, 300);
+        diametr = getRandomInt(10, 200);
     div.classList.add('backB');
     div.style.cssText += `
         --castomD: ${diametr}px;
@@ -47,4 +47,4 @@ function getRandomInt(min, max) {
   }  
   
 let timerId = setInterval(generator, 500);
-let timerIdd = setInterval(destroy, 2000);
+let timerIdd = setInterval(destroy, 5000);

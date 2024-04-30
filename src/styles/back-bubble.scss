@@ -18,7 +18,7 @@ $darkGreen: #264653;
     border:solid 1px $dDarkGreen;
     border-radius: 50%;
     box-shadow: inset -5px -5px 5px $green,inset 5px 5px 5px $dDarkGreen;
-    animation: appearance 3s forwards,  ascent 1.5s forwards 3s;
+    animation: appearance 2.5s forwards,  ascent 2s ease-in 2.5s forwards;
 }
 
 @keyframes appearance {
@@ -65,10 +65,9 @@ $darkGreen: #264653;
     }
     30%{
         bottom: calc(var(--castomD) / 6);
-        height: var(--castomD);
-        width: var(--castomD);
-    }
-    
+        height: calc(var(--castomD) * 1.03);
+        width: calc(var(--castomD) / 1.03);
+    }    
     100%{
         bottom: 125%; 
     }
