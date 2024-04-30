@@ -14,9 +14,11 @@ function winWidth(){
 function generator(){    
     let div = document.createElement('div'),
         bottomPoint = getRandomInt(150, ww-150),
-        diametr = getRandomInt(10, 200);
+        diametr = getRandomInt(10, 200),
+        zIndex = getRandomInt(0.0001, 0.01);
     div.classList.add('backB');
     div.style.cssText += `
+        translate(-${zIndex}px);
         --castomD: ${diametr}px;
         --castomL: ${bottomPoint}px;
         `
