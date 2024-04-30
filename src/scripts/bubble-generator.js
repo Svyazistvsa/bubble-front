@@ -41,10 +41,6 @@ function getRandomInt(min, max) {
     let arr = screen.querySelectorAll(".backB");
     for(let i=0; i<arr.length; i++){
         let client = arr[i].getBoundingClientRect();
-        
-        // if(client.bottom < 0){
-            //  arr[i].remove();
-        // }
         if(client.right > ww){
             arr[i].remove();
         }
